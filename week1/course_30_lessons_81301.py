@@ -15,7 +15,7 @@ def solution(s):
     s_ = ''
     for x in s:
         try:
-            answer += f'{int(x)}'
+            answer += f'{int(x)}' # o
         except ValueError:
             s_ += x
             try:
