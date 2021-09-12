@@ -1,5 +1,3 @@
-from collections import namedtuple
-
 ACTION_MAPPER = {
     'Enter': '들어왔습니다.',
     'Leave': '나갔습니다.',
@@ -40,5 +38,5 @@ if __name__ == '__main__':
     ]) == ["Ryan님이 들어왔습니다."]
 
     assert solution([
-        "Enter uid1234 Muzi", "Enter uid1235 Ryan", "Leave uid1234",  "Enter uid4567 Prodo"
+        "Enter uid1234 Muzi", "Enter uid1235 Ryan", "Leave uid1234", "Enter uid4567 Prodo"
     ]) == ["Muzi님이 들어왔습니다.", "Ryan님이 들어왔습니다.", "Muzi님이 나갔습니다.", "Prodo님이 들어왔습니다."]
